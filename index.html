@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conecta X</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	</head>
+	<body>
+    <div class="ganador">
+		<div class="divGanador">
+			<p id="ganador"></p>
+			<button id="repetir" onclick="nuevaPartida()" style="display: none">Volver a Jugar</button>
+			<button id="reiniciar" onclick="reiniciar()">Reiniciar juego</button>
+		</div>
+	</div>
+		<div id="fondoModal">
+			<div id="contenedorModal">
+				<h2>Conecta X</h2>
+				<label>Elige el número de casillas</label>
+				<br>
+				<input type="number" id="numeroCasillas" min="3" max="6" value="3" title="Elige un número entre 3 y 6">
+				<br>
+				<p id="mensajeError"></p>
+				<br>
+				<button id="botonInicio">Comenzar</button>
+			</div>
+		</div>
+		<section>
+			<h4 id="estado">Turno del jugador 1 <img src="verde.png"></h4>
+			<div id="tablero">
+				
+			</div>
+			<div id="fichas1" class="contenedorFichas izquierda">
+				<p>Fichas jugador 1</p>
+				<p class="marcador1 marcador">0</p>
+			</div>
+			<div id="fichas2" class="contenedorFichas derecha">
+				<p>Fichas jugador 2</p>
+				<p class="marcador2 marcador">0</p>
+			</div>
+		</section>
+		<div class="botonera">
+			<button id="repetir" onclick="nuevaPartida()" style="display: none">Repetir partida</button>
+			<button id="reiniciar" onclick="reiniciar()">Reiniciar juego</button>
+			<button id="eliminar"  onclick="resetear()">Resetear juego <img src="eliminar1.png" alt=""></button>
+		</div>
+		<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+- BÚSQUEDAS
+
+document.getElementById('id');
+$("#id")
+
+document.getElementsByClassName('clase')
+$(".clase")
+
+document.getElementsByTagName('tag')
+$("tag")
+
+document.querySelectorAll('X') = $('X')
+
+
+- CONTENIDO
+
+el.value
+$(el).val()
+
+Editar el contenido:
+el.value = 3
+$("el").val(3)
+
+
+el.textContent
+$(el).text()
+
+el.innerHtml
+$(el).html()
+
+- ATRIBUTOS Y DATAS
+
+el.getAttribute('attr')
+$(el).attr('attr')
+
+el.dataset.data
+$(el).data('data')
+
+- CLASES Y ESTILOS
+el.classList.add('class')
+$(el).addClass('class')
+
+el.classList.remove('class')
+$(el).removeClass('class')
+
+el.style.estilo = 'valor'
+$(el).css('estilo','valor')
+
+$(el).show()
+$(el).hide()
+
+- EVENTOS
+
+el.onclick = function
+el.click = function
+$(el).click(function)
+
+- APLICAR CAMBIOS A MÚLTIPLES ELEMENTOS
+
+var elements = document.querySelector('.grupo');
+for(let element of elements)
+	element.classList.add('clase')
+
+$('.grupo').addClass('clase')
